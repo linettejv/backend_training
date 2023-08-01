@@ -1,11 +1,12 @@
 import express from "express";
+import { myCalculator } from "./calculator";
 // to use the library
 
 const server = express();
 
 server.get('/',(req,res) => {
     console.log(req.url);
-    res.status(200).send("Hey there this is express!!");
+    res.status(200).send("Hey there this is express!! \n Implemented the calculator");
 
     let data:string = " string data input";
     console.log(data);
@@ -29,3 +30,11 @@ server.get('/',(req,res) => {
 server.listen(3000 , () => {
     console.log("server listening to 3000")
 } )
+
+const calc = new myCalculator;
+calc.add(45,90);
+calc.sub(45,99);
+calc.mul(67,89);
+calc.div(90,45);
+calc.percent(60);
+calc.power(8,3);
