@@ -35,6 +35,6 @@ const calc = new myCalculator;
 calc.add(45,90);
 calc.sub(45,99);
 calc.mul(67,89);
-calc.div(90,45);
+calc.div(90,0);
 calc.percent(60);
 calc.power(8,3);

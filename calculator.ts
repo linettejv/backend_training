@@ -26,6 +26,10 @@ interface CalculatorInterface {
         return a+b;
     }
     div(a: number, b: number):number {
+        if (b == 0){
+            console.log("Division by Zero not possible!");
+            return -1;
+        }
         this.res = a/b;
         console.log(this.res);
         return a+b;
