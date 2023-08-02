@@ -1,23 +1,12 @@
 import express from "express";
 import { myCalculator } from "./calculator";
+import employeeRouter from "./employee_router";
+import loggerMiddleware from "./loggerMiddleware";
 // to use the library
 
 const server = express();
-
-server.get('/',(req,res) => {
-    console.log(req.url);
-    res.status(200).send("Hey there this is express!! \n Implemented the calculator");
-
-    let data:string = " string data input";
-    console.log(data);
-    let variable : string | number ;
-    variable = "line";
-    console.log(variable);
-    variable = 90;
-    console.log(variable);
-
-})
-
+server.use(express.json());
+server.use(loggerMiddleware);
 // two parameters : what to do on req and 
 // res => what to give back to server
 // const server = http.createServer((req,res) => {
@@ -31,10 +20,5 @@ server.listen(3000 , () => {
     console.log("server listening to 3000")
 } )
 
-const calc = new myCalculator;
-calc.add(45,90);
-calc.sub(45,99);
-calc.mul(67,89);
-calc.div(90,0);
-calc.percent(60);
-calc.power(8,3);
+server.use('/employees',employeeRouter)
+
