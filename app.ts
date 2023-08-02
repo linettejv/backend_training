@@ -2,6 +2,8 @@ import express from "express";
 import { myCalculator } from "./calculator";
 import employeeRouter from "./employee_router";
 import loggerMiddleware from "./loggerMiddleware";
+import "reflect-metadata"
+import AppDataSource from "./data-source";
 // to use the library
 
 const server = express();
@@ -16,9 +18,13 @@ server.use(loggerMiddleware);
 
 // } );
 
-server.listen(3000 , () => {
-    console.log("server listening to 3000")
-} )
 
-server.use('/employees',employeeRouter)
+server.use('/employees',employeeRouter);
+
+(async () => {
+    await AppDataSource.initialize();
+    server.listen(3000 , () => {
+        console.log("server listening to 3000")
+    } );
+})();
 
