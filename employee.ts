@@ -1,4 +1,4 @@
-import { Column, Entity , PrimaryGeneratedColumn, CreateDateColumn, UpdateDateColumn} from "typeorm";
+import { Column, Entity , PrimaryGeneratedColumn, CreateDateColumn, UpdateDateColumn, DeleteDateColumn} from "typeorm";
 
 @Entity()
 class Employee{
@@ -16,6 +16,9 @@ class Employee{
 
     @UpdateDateColumn()
     updatedAt : Date;
+
+    @DeleteDateColumn()
+    deletedAt : Date;
 }
 
 export  {Employee};

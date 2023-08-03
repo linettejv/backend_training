@@ -1,7 +1,7 @@
 import express from "express";
 import { Employee } from "./employee";
 import { Client } from 'pg';
-import { DataSource } from "typeorm";
+import { DataSource, FindOptionsWhere, Like } from "typeorm";
 import { SnakeNamingStrategy } from "typeorm-naming-strategies";
 import AppDataSource from "./data-source";
 
@@ -19,11 +19,29 @@ let count = 2;
 ///  
 
 // get for all employees
-employeeRouter.get('/',async(req,res) => {
+    employeeRouter.get('/',async(req,res) => {
             // console.log(req.url);
             // res.status(200).send(employees);
+    const nameFilter = req.query.name;
+    const emailFilter = req.query.email;
+    // console.log(nameFilter);
     const employeeRepository = AppDataSource.getRepository(Employee);
-    const employees = await employeeRepository.find();
+
+    const qb = employeeRepository.createQueryBuilder();
+    if(nameFilter){
+    qb.andWhere("name LIKE :somename" , {somename : `%${nameFilter as string}%`});}
+    if(emailFilter){
+        qb.andWhere("email  LIKE :sampleEmail" , {sampleEmail : `%${emailFilter as string}%`});
+    }
+    const employees = await qb.getMany();
+
+    // const filter : FindOptionsWhere<Employee> = {};
+    //     if(nameFilter){
+    //     filter.name = Like("%" + nameFilter as string + "%")}
+    
+
+    // const employees = await employeeRepository.find({where : filter
+    // });
     res.status(200).send(employees);
 })
 
@@ -96,24 +114,10 @@ employeeRouter.delete('/:id',async(req,res) => {
     const employee = await employeeRepository.findOneBy({
         id : Number(req.params.id)
     });
-    const removed = await employeeRepository.remove(employee);
+    const removed = await employeeRepository.softRemove(employee);
     res.status(200).send("Employee Deleted ");
     
 })
 
-const employees: Employee[] = [{
-    id : 1,
-    name : "John",
-    email : "mail@gmail.com",
-    createdAt: new Date(),
-    updatedAt : new Date(),
-},
-{
-    id : 2,
-    name : "James",
-    email : "james@gmail.com",
-    createdAt: new Date(),
-    updatedAt : new Date(),
-}]
 
 export default employeeRouter;

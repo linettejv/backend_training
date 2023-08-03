@@ -10,7 +10,7 @@ const AppDataSource = new DataSource({
     password: "postgres",
     database: "training",
     entities: [Employee],
-    //synchronize: true,
+    synchronize: true,
     logging: true,
     namingStrategy : new SnakeNamingStrategy(),
 })
