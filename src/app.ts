@@ -1,9 +1,8 @@
 import express from "express";
-import { myCalculator } from "./calculator";
-import employeeRouter from "./employee_router";
-import loggerMiddleware from "./loggerMiddleware";
+import employeeRoute from "./route/employee.route";
+import loggerMiddleware from "./middleware/logger.middleware";
 import "reflect-metadata"
-import AppDataSource from "./data-source";
+import AppDataSource from "./db/postgres.db";
 // to use the library
 
 const server = express();
@@ -19,7 +18,7 @@ server.use(loggerMiddleware);
 // } );
 
 
-server.use('/employees',employeeRouter);
+server.use('/employees',employeeRoute);
 
 (async () => {
     await AppDataSource.initialize();
