@@ -9,13 +9,22 @@ class EmployeeRepository{
 
     find():Promise<Employee[]>{
         // const employeeRepository = this.dataSource.getRepository(Employee);
-        return this.employeeRepository.find();
+        return this.employeeRepository.find({
+            relations : {
+                address : true
+            }
+        });
     }
 
     findOneBy(id : number ): Promise<Employee>{
         // const employeeRepository = this.dataSource.getRepository(Employee);
-        return this.employeeRepository.findOneBy({
-            id : id,
+        return this.employeeRepository.findOne({
+            //id : id,
+            where : {id : id},
+            relations :{
+                address : true,
+            }
+
         }); 
     }
 
@@ -25,10 +34,19 @@ class EmployeeRepository{
         return this.employeeRepository.save(newEmp);
 
     }
-    deleteEmployeeById(id : number) : boolean{
+    async deleteEmployeeById(id : number) {
 
-        this.employeeRepository.softDelete(id)
-        return true;
+        const toDelete = await this.employeeRepository.findOne({
+            //id : id,
+            where : {id : id},
+            relations :{
+                address : true,
+            }
+
+        }); 
+
+        this.employeeRepository.softRemove(toDelete)
+        //return true;
     }
     putEmployee(newEmp:Employee) : Promise<Employee>{
         return this.employeeRepository.save(newEmp);
