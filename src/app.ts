@@ -1,3 +1,7 @@
+
+import * as dotenv from "dotenv";
+dotenv.config({path: __dirname+'/.env'})
+
 import express, { NextFunction, Request, Response } from "express";
 import employeeRoute from "./route/employee.route";
 import loggerMiddleware from "./middleware/logger.middleware";
@@ -6,6 +10,9 @@ import AppDataSource from "./db/postgres.db";
 import { error } from "console";
 import HttpException from "./exception/http.exception";
 import errorMiddleware from "./middleware/error.middleware";
+import departmentRoute from "./route/department.route";
+
+
 // to use the library
 
 const server = express();
@@ -22,6 +29,8 @@ server.use(loggerMiddleware);
 
 
 server.use('/employees',employeeRoute);
+
+server.use('/department',departmentRoute);
 
 //error middle ware 
 server.use(errorMiddleware);

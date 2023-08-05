@@ -8,6 +8,10 @@ import Address from "../entity/address.entity";
 import ValidateErrors from "../exception/Validaterrors.exception";
 import { error } from "console";
 import UpdateEmployeeDto from "../dto/update-employee.dto";
+import { emit } from "process";
+import authenticate from "../middleware/authentication.middleware";
+import authorize from "../middleware/authorization.middleware";
+import { Role } from "../utils/role.enum";
 
 
 class EmployeeController{
@@ -17,17 +21,24 @@ class EmployeeController{
         ) {
         this.router = express.Router();
         // this.employeeService = new EmployeeService();
-
-        this.router.get("/",this.getAllEmployees.bind(this));
+        // everyone has access:
+        this.router.get("/",authenticate,this.getAllEmployees.bind(this));
+        // everyone 
         this.router.get("/:id",this.getEmployeeById);
-        this.router.post("/",this.postEmployee);
+    
+        this.router.post("/",authenticate,authorize([Role.HR, Role.MANAGER]), this.postEmployee);
+        // hr and manager   authorize([Role.HR, Role.MANAGER]
         this.router.delete("/:id",this.deleteEmployeeById);
+        // hr has access   authorize([Role.HR]
         this.router.put("/:id",this.replaceEmployeeById);
+        // everyone should login 
+        this.router.post("/login" , this.loginEmployee)
     
     }
 
     async getAllEmployees(req: express.Request , res: express.Response){
         const employees =  await this.employeeService.getAllEmployees();
+       
         res.status(200).send(employees);
     }
 
@@ -45,17 +56,14 @@ class EmployeeController{
     // create employee
     postEmployee = async(req: express.Request , res: express.Response , next: NextFunction) => {
         try{ 
-            const name = req.body.name;
-            const email = req.body.email;
-            const address = req.body.address;
-
+           
             const CreateEmployeeDt = plainToInstance(CreateEmployeeDto , req.body);
             const errors = await validate(CreateEmployeeDt);
             if (errors.length > 0 ){
                 console.log(errors);
                 throw new ValidateErrors(404 , "Validation Errors", errors)
             }
-            const employees =  await this.employeeService.createEmp(email,name,address);
+            const employees =  await this.employeeService.createEmp(CreateEmployeeDt);
             res.status(200).send(employees);}
 
 
@@ -84,10 +92,7 @@ class EmployeeController{
 
         try{
         const employeeId = Number((req.params.id));
-        const employee = await this.employeeService.getEmployeeById(employeeId);
-        const name = req.body.name;
-        const email = req.body.email;
-        const address = req.body.address
+        //const employee = await this.employeeService.getEmployeeById(employeeId);
 
         const UpdateEmployeeDt = plainToInstance(UpdateEmployeeDto , req.body);
             const errors = await validate(UpdateEmployeeDt);
@@ -97,12 +102,30 @@ class EmployeeController{
             }
 
 
-        const employeeToChannge = await this.employeeService.replaceEmployeeById(employeeId, email,name,address);
+        const employeeToChannge = await this.employeeService.replaceEmployeeById(employeeId, UpdateEmployeeDt);
         res.status(200).send(employeeToChannge);
         }
         catch(error){
             next(error)
         }
+    }
+
+    public loginEmployee = async (
+        req : express.Request , res : express.Response , next : NextFunction
+    ) =>{
+
+        const email = req.body.email;
+        const password = req.body.password;
+
+        try{
+
+            const token = await this.employeeService.loginEmployee(email , password);
+            res.status(200).send({data:token})
+
+        }catch(error){
+            next(error);
+        }
+
     }
 
 }

@@ -7,24 +7,43 @@ class EmployeeRepository{
     constructor(private employeeRepository : Repository<Employee>){
     }
 
-    find():Promise<Employee[]>{
+    async find():Promise<Employee[]>{
         // const employeeRepository = this.dataSource.getRepository(Employee);
-        return this.employeeRepository.find({
-            relations : {
-                address : true
-            }
+        const emp = await this.employeeRepository.find({ 
+            relations : 
+                ["department","address"]
         });
+        
+
+        return emp;    
     }
 
-    findOneBy(id : number ): Promise<Employee>{
+    async findOneBy(id : number ): Promise<Employee>{
+        // const employeeRepository = this.dataSource.getRepository(Employee);
+        const emp= await this.employeeRepository.findOne({
+            //id : id,
+            where : {id : id},
+            relations :["department","address"]
+
+        }); 
+
+        // this is used to append the department id to the result : IMPORTANT!
+        const employeesDept = {
+            ...emp,
+            department_id: emp.department ? emp.department.id : null, 
+            department:undefined };
+
+        return employeesDept    
+    }
+
+    findByEmail(email : string): Promise<Employee>{
         // const employeeRepository = this.dataSource.getRepository(Employee);
         return this.employeeRepository.findOne({
             //id : id,
-            where : {id : id},
+            where : {email : email},
             relations :{
                 address : true,
             }
-
         }); 
     }
 
