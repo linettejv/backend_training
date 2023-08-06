@@ -1,8 +1,8 @@
 export enum Role{
     UI = "UI",
-    DEVELOPER = "DEVELOPER",
+    DEVELOPER = "Developer",
     HR = "HR",
-    MANAGER = "MANAGER",
-    PRODUCT = "PRODUCT",
-    FINANCE = "FINANCE",
+    MANAGER = "Manager",
+    PRODUCT = "Product",
+    FINANCE = "Finance",
 }

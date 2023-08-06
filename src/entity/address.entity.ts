@@ -9,6 +9,18 @@ class Address extends AbstratctEntity {
     line1 : string;
 
     @Column()
+    address_line2 : string;
+
+    @Column()
+    City : string;
+
+    @Column()
+    State : String;
+
+    @Column()
+    Country : string;
+
+    @Column()
     pincode :string;
 
     @OneToOne(()=> Employee,(employee) => employee.address)

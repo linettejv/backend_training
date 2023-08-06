@@ -20,6 +20,10 @@ class UpdateEmployeeDto{
 
  
     department_id;
+
+    joining_date : string;
+
+    experience : number;
 }
 
 export default UpdateEmployeeDto;

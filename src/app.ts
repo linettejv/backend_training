@@ -11,6 +11,7 @@ import { error } from "console";
 import HttpException from "./exception/http.exception";
 import errorMiddleware from "./middleware/error.middleware";
 import departmentRoute from "./route/department.route";
+import rolesRoute from "./route/roles.route";
 
 
 // to use the library
@@ -31,6 +32,8 @@ server.use(loggerMiddleware);
 server.use('/employees',employeeRoute);
 
 server.use('/department',departmentRoute);
+
+server.use('/roles',rolesRoute);
 
 //error middle ware 
 server.use(errorMiddleware);

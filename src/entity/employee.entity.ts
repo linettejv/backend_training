@@ -15,12 +15,15 @@ class Employee extends AbstratctEntity{
     email:string;
 
     @Column({nullable:true})
-    age : number;
+    experience: number;
 
     @OneToOne(()=>Address , (address)=> address.employee , {cascade:true})
     address:Address;
 
     // many employees in one department
+
+    @Column()
+    joining_date : string;
 
     
     @ManyToOne(() => Department , (department) => department.employee)

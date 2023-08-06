@@ -12,6 +12,7 @@ import { emit } from "process";
 import authenticate from "../middleware/authentication.middleware";
 import authorize from "../middleware/authorization.middleware";
 import { Role } from "../utils/role.enum";
+import PatchEmployeeDto from "../dto/patch-employee-dto";
 
 
 class EmployeeController{
@@ -32,21 +33,25 @@ class EmployeeController{
         // hr has access   authorize([Role.HR]
         this.router.put("/:id",this.replaceEmployeeById);
         // everyone should login 
-        this.router.post("/login" , this.loginEmployee)
-    
+        this.router.post("/login" , this.loginEmployee);
+
+        this.router.patch("/:id",this.patchEmployeeById);     
     }
 
     async getAllEmployees(req: express.Request , res: express.Response){
+        const reqstart = Date.now();
         const employees =  await this.employeeService.getAllEmployees();
+        const length = employees.length;
        
-        res.status(200).send(employees);
+        res.status(200).send({employees,error : "null",message: "OK", meta : {length : `${length}`, took : `${Date.now() - reqstart}`}});
     }
 
     getEmployeeById = async (req : express.Request , res : express.Response , next : NextFunction) => {
        try{
+        const reqstart = Date.now();
         const employeeId = Number((req.params.id));
         const employee = await this.employeeService.getEmployeeById(employeeId);
-        res.status(200).send(employee);
+        res.status(200).send({employee,error : "null",message: "OK", meta : {length : "1", took : `${Date.now() - reqstart}`}});
        }
        catch (error){
         next(error)
@@ -57,6 +62,7 @@ class EmployeeController{
     postEmployee = async(req: express.Request , res: express.Response , next: NextFunction) => {
         try{ 
            
+            const reqstart = Date.now();
             const CreateEmployeeDt = plainToInstance(CreateEmployeeDto , req.body);
             const errors = await validate(CreateEmployeeDt);
             if (errors.length > 0 ){
@@ -64,7 +70,7 @@ class EmployeeController{
                 throw new ValidateErrors(404 , "Validation Errors", errors)
             }
             const employees =  await this.employeeService.createEmp(CreateEmployeeDt);
-            res.status(200).send(employees);}
+            res.status(200).send({employees,error : "null",message: "OK", meta : {length : "1", took : `${Date.now() - reqstart}`}});}
 
 
             catch(error){
@@ -91,6 +97,7 @@ class EmployeeController{
     replaceEmployeeById = async (req : express.Request , res : express.Response , next : NextFunction) => {
 
         try{
+        const reqstart = Date.now();
         const employeeId = Number((req.params.id));
         //const employee = await this.employeeService.getEmployeeById(employeeId);
 
@@ -103,7 +110,7 @@ class EmployeeController{
 
 
         const employeeToChannge = await this.employeeService.replaceEmployeeById(employeeId, UpdateEmployeeDt);
-        res.status(200).send(employeeToChannge);
+        res.status(200).send({employeeToChannge,error : "null",message: "OK", meta : {length : "1", took : `${Date.now() - reqstart}`}});
         }
         catch(error){
             next(error)
@@ -111,22 +118,46 @@ class EmployeeController{
     }
 
     public loginEmployee = async (
+        
         req : express.Request , res : express.Response , next : NextFunction
     ) =>{
 
+        const reqstart = Date.now();
         const email = req.body.email;
         const password = req.body.password;
 
         try{
 
-            const token = await this.employeeService.loginEmployee(email , password);
-            res.status(200).send({data:token})
+            const {token,employee} = await this.employeeService.loginEmployee(email , password);
+            res.status(200).send({data:token,employee,error : "null",message: "OK", meta : {length : "1", took : `${Date.now() - reqstart}`}})
 
         }catch(error){
             next(error);
         }
 
     }
+
+    patchEmployeeById = async(req : express.Request , res : express.Response , next : NextFunction) => {
+
+        try{
+            const reqstart = Date.now();
+            const empId = Number(req.params.id);
+
+        const PatchEmployeeDt = plainToInstance(PatchEmployeeDto, req.body);
+        const errors = await validate(PatchEmployeeDt);
+        if (errors.length > 0 ){
+            console.log(errors);
+            throw new ValidateErrors(404 , "Validation Errors", errors)
+        }
+
+        const employeeToPatch = await this.employeeService.patchEmployeeById(empId, PatchEmployeeDt);
+        res.status(200).send({employeeToPatch,error : "null",message: "OK", meta : {length : "1", took : `${Date.now() - reqstart}`}});
+        }catch(error){
+            next(error)
+        }
+    }
+
+    
 
 }
 

@@ -9,13 +9,17 @@ class EmployeeRepository{
 
     async find():Promise<Employee[]>{
         // const employeeRepository = this.dataSource.getRepository(Employee);
-        const emp = await this.employeeRepository.find({ 
+        const emp = await  this.employeeRepository.find({ 
             relations : 
-                ["department","address"]
+                ['department','address']
         });
         
+        const empDept = emp.map(employee=>({
+            ...employee,
+            department_id: employee.department ? employee.department.id : null, 
+            department:undefined }))
 
-        return emp;    
+        return empDept;    
     }
 
     async findOneBy(id : number ): Promise<Employee>{
@@ -36,21 +40,33 @@ class EmployeeRepository{
         return employeesDept    
     }
 
-    findByEmail(email : string): Promise<Employee>{
+    async findByEmail(email : string): Promise<Employee>{
         // const employeeRepository = this.dataSource.getRepository(Employee);
-        return this.employeeRepository.findOne({
+        const emp = await  this.employeeRepository.findOne({
             //id : id,
             where : {email : email},
             relations :{
                 address : true,
             }
         }); 
+        const employeesDept = {
+            ...emp,
+            department_id: emp.department ? emp.department.id : null, 
+            department:undefined };
+
+        return employeesDept 
     }
 
-    postEmployee(newEmp : Employee) : Promise<Employee>
+    async postEmployee(newEmp : Employee) : Promise<Employee>
     {
         
-        return this.employeeRepository.save(newEmp);
+        const emp = await this.employeeRepository.save(newEmp);
+        const employeesDept = {
+            ...emp,
+            department_id: emp.department ? emp.department.id : null, 
+            department:undefined };
+
+        return employeesDept; 
 
     }
     async deleteEmployeeById(id : number) {
@@ -67,8 +83,14 @@ class EmployeeRepository{
         this.employeeRepository.softRemove(toDelete)
         //return true;
     }
-    putEmployee(newEmp:Employee) : Promise<Employee>{
-        return this.employeeRepository.save(newEmp);
+    async putEmployee(newEmp:Employee) : Promise<Employee>{
+        const emp = await this.employeeRepository.save(newEmp);
+        const employeesDept = {
+            ...emp,
+            department_id: emp.department ? emp.department.id : null, 
+            department:undefined };
+
+        return employeesDept; 
 
     }
 
