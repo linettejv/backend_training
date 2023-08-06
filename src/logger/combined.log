@@ -1,0 +1,7 @@
+[2023-08-06T21:30:56.797Z] undefined [32minfo[39m: Server Started Succesfully!
+[2023-08-06T21:31:01.695Z] undefined [31merror[39m: Invalid id request : doesnt exist in the database
+[2023-08-06T21:31:01.696Z] undefined [31merror[39m: get employee by id method call failed --
+[2023-08-06T21:31:08.753Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-06T21:31:13.549Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-06T21:31:21.676Z] undefined [31merror[39m: login failed! -- controller
+[2023-08-06T21:31:34.757Z] undefined [32minfo[39m: invalid department id provided in 'patch' call

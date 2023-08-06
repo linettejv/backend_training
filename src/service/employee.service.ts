@@ -10,6 +10,7 @@ import CreateEmployeeDto from "../dto/create-employee.dto";
 import DepartmentRepository from "../repository/department.repository";
 import UpdateEmployeeDto from "../dto/update-employee.dto";
 import PatchEmployeeDto from "../dto/patch-employee-dto";
+import logger from "../logger/logger";
 
 class EmployeeService{
     
@@ -30,7 +31,7 @@ class EmployeeService{
     {
         // place to add some more logic:
         const emp =  await this.employeeRepository.findOneBy(id);
-        console.log("findone function");
+        logger.info("Find one function called - service getEmpByid")
         if (!emp){
             throw new HttpException(500,`No Employee found id : ${id}`)
             //return null;
@@ -59,6 +60,7 @@ class EmployeeService{
         
         const dept = await this.departmentRepository.findOneBy(Emp.department_id);
         if(!dept){
+            logger.error("invalid department id provided - 'get' by id -- service")
             throw new HttpException(500,`No Department found id : ${Emp.department_id}`)
         }
         else{
@@ -71,6 +73,7 @@ class EmployeeService{
     {
         const emp =  await this.employeeRepository.findOneBy(id);
         if (!emp){
+            logger.error("invalid employee id provided in 'delete' call")
             throw new HttpException(500,`No Employee found id : ${id}`)
             //return null;
         }
@@ -81,6 +84,7 @@ class EmployeeService{
     async replaceEmployeeById(id : number, emp : UpdateEmployeeDto) : Promise<Employee>{
         const newEmp = await this.employeeRepository.findOneBy(id);
         if(!newEmp){
+            logger.error("invalid employee id provided in 'post' call")
             throw new HttpException(500,`No Employee found id : ${id}`)
         }
         else{
@@ -104,6 +108,7 @@ class EmployeeService{
     patchEmployeeById = async (id : number , empToPatch : PatchEmployeeDto) => {
         const Emp = await this.employeeRepository.findOneBy(id);
         if(!Emp){
+            logger.error("invalid employee id provided in 'patch' call")
             throw new HttpException(404,`No Employee found id : ${id}`)
         }
         else{
@@ -139,6 +144,7 @@ class EmployeeService{
             if(empToPatch.department_id){
             const dept = await this.departmentRepository.findOneBy(empToPatch.department_id);
             if(!dept){
+                logger.info("invalid department id provided in 'patch' call")
                 throw new HttpException(500,`No Department found id : ${empToPatch.department_id}`)
             }
             else{
@@ -168,6 +174,7 @@ class EmployeeService{
     loginEmployee = async (email : string, password : string) => {
         const employee = await this.employeeRepository.findByEmail(email);
         if (!employee){
+            logger.error("Login failed -- service")
             throw new HttpException(404 , "Incorrect Username Or Password");
         }
         const res = await bcrpyt.compare(password , employee.password);

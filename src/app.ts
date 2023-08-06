@@ -12,6 +12,7 @@ import HttpException from "./exception/http.exception";
 import errorMiddleware from "./middleware/error.middleware";
 import departmentRoute from "./route/department.route";
 import rolesRoute from "./route/roles.route";
+import logger from "./logger/logger";
 
 
 // to use the library
@@ -41,7 +42,8 @@ server.use(errorMiddleware);
 (async () => {
     await AppDataSource.initialize();
     server.listen(3000 , () => {
-        console.log("server listening to 3000")
+        console.log("server listening to 3000");
+        logger.info("Server Started Succesfully!");
     } );
 })();
 

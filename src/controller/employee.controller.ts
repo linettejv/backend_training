@@ -13,6 +13,7 @@ import authenticate from "../middleware/authentication.middleware";
 import authorize from "../middleware/authorization.middleware";
 import { Role } from "../utils/role.enum";
 import PatchEmployeeDto from "../dto/patch-employee-dto";
+import logger from "../logger/logger";
 
 
 class EmployeeController{
@@ -39,10 +40,12 @@ class EmployeeController{
     }
 
     async getAllEmployees(req: express.Request , res: express.Response){
+        
         const reqstart = Date.now();
+        logger.info("Initiated a get all employees call");
         const employees =  await this.employeeService.getAllEmployees();
         const length = employees.length;
-       
+        
         res.status(200).send({employees,error : "null",message: "OK", meta : {length : `${length}`, took : `${Date.now() - reqstart}`}});
     }
 
@@ -54,6 +57,10 @@ class EmployeeController{
         res.status(200).send({employee,error : "null",message: "OK", meta : {length : "1", took : `${Date.now() - reqstart}`}});
        }
        catch (error){
+
+        logger.error("get employee by id method call failed -- controller");
+        logger.exceptions;
+    
         next(error)
        }
 
@@ -66,7 +73,7 @@ class EmployeeController{
             const CreateEmployeeDt = plainToInstance(CreateEmployeeDto , req.body);
             const errors = await validate(CreateEmployeeDt);
             if (errors.length > 0 ){
-                console.log(errors);
+                logger.info(errors);
                 throw new ValidateErrors(404 , "Validation Errors", errors)
             }
             const employees =  await this.employeeService.createEmp(CreateEmployeeDt);
@@ -74,6 +81,7 @@ class EmployeeController{
 
 
             catch(error){
+                logger.error("Post employee api called failed -- controller ");
                 next(error)
             }
        
@@ -87,6 +95,7 @@ class EmployeeController{
             res.status(200).send("Employee Deleted");
            }
            catch (error){
+            logger.error("Delete emp by id method failed --  controller")
             next(error)
            }
         //const employeeId = Number((req.params.id));
@@ -104,7 +113,7 @@ class EmployeeController{
         const UpdateEmployeeDt = plainToInstance(UpdateEmployeeDto , req.body);
             const errors = await validate(UpdateEmployeeDt);
             if (errors.length > 0 ){
-                console.log(errors);
+                logger.error(errors)
                 throw new ValidateErrors(404 , "Validation Errors", errors)
             }
 
@@ -113,6 +122,7 @@ class EmployeeController{
         res.status(200).send({employeeToChannge,error : "null",message: "OK", meta : {length : "1", took : `${Date.now() - reqstart}`}});
         }
         catch(error){
+            logger.error("Replace employee by id methodm failed -- controller")
             next(error)
         }
     }
@@ -132,6 +142,7 @@ class EmployeeController{
             res.status(200).send({data:token,employee,error : "null",message: "OK", meta : {length : "1", took : `${Date.now() - reqstart}`}})
 
         }catch(error){
+            logger.error('login failed! -- controller')
             next(error);
         }
 
@@ -146,7 +157,7 @@ class EmployeeController{
         const PatchEmployeeDt = plainToInstance(PatchEmployeeDto, req.body);
         const errors = await validate(PatchEmployeeDt);
         if (errors.length > 0 ){
-            console.log(errors);
+            logger.error(errors)
             throw new ValidateErrors(404 , "Validation Errors", errors)
         }
 

@@ -2,6 +2,8 @@ import { DataSource, Repository } from "typeorm";
 import { Employee } from "../entity/employee.entity";
 import AppDataSource from "../db/postgres.db";
 import { UpdateResult } from "typeorm/driver/mongodb/typings";
+import HttpException from "../exception/http.exception";
+import logger from "../logger/logger";
 
 class EmployeeRepository{
     constructor(private employeeRepository : Repository<Employee>){
@@ -31,6 +33,10 @@ class EmployeeRepository{
 
         }); 
 
+        if(!emp){
+            logger.error("Invalid id request : doesnt exist in the database")
+            throw new HttpException(404, "No employee with the provided id");
+        }
         // this is used to append the department id to the result : IMPORTANT!
         const employeesDept = {
             ...emp,
@@ -79,7 +85,7 @@ class EmployeeRepository{
             }
 
         }); 
-
+        logger.info(`removed employee with id ${id}`);
         this.employeeRepository.softRemove(toDelete)
         //return true;
     }
