@@ -1,7 +1,6 @@
-import { DataSource, Repository } from "typeorm";
+import { Repository } from "typeorm";
 import { Employee } from "../entity/employee.entity";
-import AppDataSource from "../db/postgres.db";
-import { UpdateResult } from "typeorm/driver/mongodb/typings";
+
 import HttpException from "../exception/http.exception";
 import logger from "../logger/logger";
 
@@ -53,14 +52,17 @@ class EmployeeRepository{
             where : {email : email},
             relations :{
                 address : true,
+                department: true
             }
         }); 
-        const employeesDept = {
-            ...emp,
-            department_id: emp.department ? emp.department.id : null, 
-            department:undefined };
+        if (emp) {
+            const employeesDept = {
+                ...emp,
+                department_id: emp.department ? emp.department.id : null, 
+                department:undefined };
 
-        return employeesDept 
+            return employeesDept }
+        return null;        
     }
 
     async postEmployee(newEmp : Employee) : Promise<Employee>

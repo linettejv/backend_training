@@ -9,10 +9,10 @@ class DepartmentService{
     constructor(private departmentRepository : DepartmentRepository){}
 
     async createDept(Dept : CreateDepartmentDto ){
-        const newDept = new Department;
+        const newDept = new Department();
         newDept.name = Dept.name;
         
-
+        //console.log("+++++++++++++++", newDept)
         return this.departmentRepository.postDepartment(newDept);
     }
 

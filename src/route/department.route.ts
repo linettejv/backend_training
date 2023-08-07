@@ -9,5 +9,5 @@ const departmentRepository = new DepartmentRepository(AppDataSource.getRepositor
 const departmentService = new DepartmentService(departmentRepository);
 const departmentController = new DepartmentController(departmentService);
 const departmentRoute = departmentController.router;
-
+export {departmentService}
 export default departmentRoute;

@@ -30,20 +30,22 @@ server.use(loggerMiddleware);
 // } );
 
 
-server.use('/employees',employeeRoute);
+server.use('/employees', employeeRoute);
 
-server.use('/department',departmentRoute);
+server.use('/department', departmentRoute);
 
-server.use('/roles',rolesRoute);
+server.use('/roles', rolesRoute);
 
 //error middle ware 
 server.use(errorMiddleware);
 
 (async () => {
     await AppDataSource.initialize();
-    server.listen(3000 , () => {
+    server.listen(3000, () => {
         console.log("server listening to 3000");
         logger.info("Server Started Succesfully!");
-    } );
+    }).on('error', (err) => {
+        console.log(err)
+    })
 })();
 

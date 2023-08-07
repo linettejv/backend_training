@@ -11,7 +11,7 @@ class AbstractEntity{
     updatedAt : Date;
 
     @DeleteDateColumn()
-    deletedAt : Date;
+    deletedAt ?: Date;
 }
 
 export default AbstractEntity;

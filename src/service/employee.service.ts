@@ -11,11 +11,12 @@ import DepartmentRepository from "../repository/department.repository";
 import UpdateEmployeeDto from "../dto/update-employee.dto";
 import PatchEmployeeDto from "../dto/patch-employee-dto";
 import logger from "../logger/logger";
+import DepartmentService from "./department.service";
 
 class EmployeeService{
     
     constructor (private employeeRepository : EmployeeRepository,
-        private departmentRepository : DepartmentRepository){
+        private departmentService : DepartmentService){
         //this.employeeRepository = new EmployeeRepository();
     }
 
@@ -58,7 +59,7 @@ class EmployeeService{
         
         newEmp.password = await bcrpyt.hash(Emp.password,10);
         
-        const dept = await this.departmentRepository.findOneBy(Emp.department_id);
+        const dept = await this.departmentService.getDeptById(Emp.department_id);
         if(!dept){
             logger.error("invalid department id provided - 'get' by id -- service")
             throw new HttpException(500,`No Department found id : ${Emp.department_id}`)
@@ -67,7 +68,10 @@ class EmployeeService{
             newEmp.department = dept;
         }
 
-        return this.employeeRepository.postEmployee(newEmp);
+        console.log('############', newEmp)
+
+        const createdEmployee = await this.employeeRepository.postEmployee(newEmp);
+        return createdEmployee;
     }
     async deleteEmployeeById(id : number)
     {
@@ -142,7 +146,7 @@ class EmployeeService{
             }
           
             if(empToPatch.department_id){
-            const dept = await this.departmentRepository.findOneBy(empToPatch.department_id);
+            const dept = await this.departmentService.getDeptById(empToPatch.department_id);
             if(!dept){
                 logger.info("invalid department id provided in 'patch' call")
                 throw new HttpException(500,`No Department found id : ${empToPatch.department_id}`)
@@ -177,6 +181,7 @@ class EmployeeService{
             logger.error("Login failed -- service")
             throw new HttpException(404 , "Incorrect Username Or Password");
         }
+        
         const res = await bcrpyt.compare(password , employee.password);
         if (!res){
             throw new HttpException(401 , "Incorrect Username Or Password")

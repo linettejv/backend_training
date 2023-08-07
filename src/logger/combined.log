@@ -5,3 +5,66 @@
 [2023-08-06T21:31:13.549Z] undefined [32minfo[39m: Initiated a get all employees call
 [2023-08-06T21:31:21.676Z] undefined [31merror[39m: login failed! -- controller
 [2023-08-06T21:31:34.757Z] undefined [32minfo[39m: invalid department id provided in 'patch' call
+[2023-08-06T21:37:20.299Z] undefined [32minfo[39m: Server Started Succesfully!
+[2023-08-07T07:29:52.775Z] undefined [32minfo[39m: Server Started Succesfully!
+[2023-08-07T07:39:51.067Z] undefined [31merror[39m: login failed! -- controller
+[2023-08-07T07:46:33.745Z] undefined [31merror[39m: login failed! -- controller
+[2023-08-07T07:46:41.511Z] undefined [31merror[39m: login failed! -- controller
+[2023-08-07T07:48:13.866Z] undefined [31merror[39m: login failed! -- controller
+[2023-08-07T07:48:22.197Z] undefined [31merror[39m: login failed! -- controller
+[2023-08-07T07:48:33.795Z] undefined [31merror[39m: login failed! -- controller
+[2023-08-07T07:49:11.751Z] undefined [31merror[39m: login failed! -- controller
+[2023-08-07T07:50:51.018Z] undefined [31merror[39m: login failed! -- controller
+[2023-08-07T07:52:15.301Z] undefined [31merror[39m: login failed! -- controller
+[2023-08-07T07:52:35.207Z] undefined [31merror[39m: login failed! -- controller
+[2023-08-07T07:55:28.466Z] undefined [31merror[39m: login failed! -- controller
+[2023-08-07T08:10:46.488Z] undefined [32minfo[39m: Server Started Succesfully!
+[2023-08-07T08:15:22.933Z] undefined [31merror[39m: Login failed -- service
+[2023-08-07T08:15:22.934Z] undefined [31merror[39m: login failed! -- controller
+[2023-08-07T08:17:14.105Z] undefined [32minfo[39m: Server Started Succesfully!
+[2023-08-07T08:17:53.359Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-07T08:18:08.378Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-07T08:18:14.676Z] undefined [31merror[39m: Invalid id request : doesnt exist in the database
+[2023-08-07T08:18:14.677Z] undefined [31merror[39m: get employee by id method call failed -- controller
+[2023-08-07T08:21:02.919Z] undefined [32minfo[39m: An instance of CreateEmployeeDto has failed the validation:
+ - property name has failed the following constraints: isString, isNotEmpty 
+,An instance of CreateEmployeeDto has failed the validation:
+ - property address has failed the following constraints: isNotEmpty 
+,An instance of CreateEmployeeDto has failed the validation:
+ - property experience has failed the following constraints: isNumber 
+,An instance of CreateEmployeeDto has failed the validation:
+ - property joining_date has failed the following constraints: isString 
+,An instance of CreateEmployeeDto has failed the validation:
+ - property role has failed the following constraints: isEnum, isNotEmpty 
+,An instance of CreateEmployeeDto has failed the validation:
+ - property department_id has failed the following constraints: isNotEmpty 
+
+[2023-08-07T08:21:02.920Z] undefined [31merror[39m: Post employee api called failed -- controller 
+[2023-08-07T08:23:47.046Z] undefined [32minfo[39m: An instance of CreateEmployeeDto has failed the validation:
+ - property email has failed the following constraints: isEmail, isNotEmpty 
+,An instance of CreateEmployeeDto has failed the validation:
+ - property address.line1 has failed the following constraints: isString 
+ - property address.address_line2 has failed the following constraints: isString 
+ - property address.City has failed the following constraints: isString 
+ - property address.State has failed the following constraints: isString 
+ - property address.Country has failed the following constraints: isString 
+ - property address.pincode has failed the following constraints: isString 
+,An instance of CreateEmployeeDto has failed the validation:
+ - property password has failed the following constraints: isString, isNotEmpty 
+,An instance of CreateEmployeeDto has failed the validation:
+ - property joining_date has failed the following constraints: isString 
+,An instance of CreateEmployeeDto has failed the validation:
+ - property role has failed the following constraints: isEnum, isNotEmpty 
+
+[2023-08-07T08:23:47.047Z] undefined [31merror[39m: Post employee api called failed -- controller 
+[2023-08-07T08:27:09.880Z] undefined [32minfo[39m: An instance of CreateEmployeeDto has failed the validation:
+ - property address.pincode has failed the following constraints: isString 
+,An instance of CreateEmployeeDto has failed the validation:
+ - property joining_date has failed the following constraints: isString 
+,An instance of CreateEmployeeDto has failed the validation:
+ - property role has failed the following constraints: isEnum, isNotEmpty 
+
+[2023-08-07T08:27:09.881Z] undefined [31merror[39m: Post employee api called failed -- controller 
+[2023-08-07T12:21:11.067Z] undefined [32minfo[39m: Server Started Succesfully!
+[2023-08-07T12:21:18.252Z] undefined [31merror[39m: Invalid id request : doesnt exist in the database
+[2023-08-07T12:21:18.252Z] undefined [31merror[39m: get employee by id method call failed -- controller
