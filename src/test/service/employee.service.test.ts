@@ -125,13 +125,12 @@ describe('employee service test cases', () => {
                 const mockGetDeptById = jest.fn();
 
                 const mockedDepartment: Department = {
-                    id: 1,
+                    id: 3,
                     name: "HR",
                     createdAt: new Date('2023-08-07T10:38:04.289Z'),
-                    updatedAt: new Date('2023-08-07T10:38:04.289Z'),
-                    
+                    updatedAt: new Date('2023-08-07T10:38:04.289Z'),                
                 } 
-                const dummyAddress = plainToInstance(Address,{
+                const dummyAddress: Address  = {
                     // id: 16,
                     line1: "Kannur",
                     pincode: "1234",
@@ -139,24 +138,21 @@ describe('employee service test cases', () => {
                     City: "kannur",
                     State: "Kerala",
                     Country: "kannur"
-                })
+                } as unknown as Address;
+
+
                 when(mockGetDeptById).calledWith(3).mockResolvedValue(mockedDepartment);
                 departmentService.getDeptById = mockGetDeptById;
 
                 bcrpyt.hash = jest.fn().mockResolvedValue("password");
 
-                const dummyEmployee: CreateEmployeeDto= 
+                const input: CreateEmployeeDto= 
                     {
-                        //id: 19,
-                        //createdAt: new Date(),
-                        //updatedAt: new Date(),
-                       // deletedAt: new Date(),
                         name: "vaishnav",
-                        //age: 4,
                         email: "vaishnav@gmail.com",
                         joining_date: "3/7/23",
                         experience: 7,
-                        password: expect.anything(),
+                        password: "password",
                         role: Role[Role.HR],
                         address: dummyAddress ,
                         department_id: 3,
@@ -172,22 +168,18 @@ describe('employee service test cases', () => {
                         email: "vaishnav@gmail.com",
                         joining_date: "3/7/23",
                         experience: 7,
-                        password: expect.anything(),
+                        password: "password",
                         role: Role[Role.HR],
                         address: dummyAddress,
                         department: {
-                            id: 1
+                            id: 3
                         } as Department,
                     }
 
                     const postedEmployee = 
                     {
-                        // id: 19,
-                        //createdAt: new Date(),
-                        //updatedAt: new Date(),
-                       // deletedAt: new Date(),
+            
                         name: "vaishnav",
-                        //age: 4,
                         email: "vaishnav@gmail.com",
                         joining_date: "3/7/23",
                         experience: 7,
@@ -195,13 +187,11 @@ describe('employee service test cases', () => {
                         role: Role[Role.HR],
                         address: dummyAddress ,
                         department: {
-                            id: 1,
+                            id: 3,
                             name: 'HR',
                             createdAt: new Date('2023-08-07T10:38:04.289Z'),
                             updatedAt: new Date('2023-08-07T10:38:04.289Z')
-                          },
-                        // createdAt: new Date('2023-08-07T10:38:04.289Z'),
-                        // updatedAt: new Date('2023-08-07T10:38:04.289Z'),
+                          }
                     }
 
 
@@ -210,8 +200,8 @@ describe('employee service test cases', () => {
                     when(mockPostEmp).calledWith(postedEmployee).mockResolvedValue(dummyResponse);
                     employeeRepository.postEmployee = mockPostEmp;
 
-                    const emp = await employeeService.createEmp(dummyEmployee);
-                    expect(emp).toStrictEqual(dummyEmployee)
+                    const output = await employeeService.createEmp(input);
+                    expect(output).toStrictEqual(dummyResponse)
 
                 })
 
