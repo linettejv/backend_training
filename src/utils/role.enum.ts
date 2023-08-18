@@ -5,4 +5,5 @@ export enum Role{
     MANAGER = "Manager",
     PRODUCT = "Product",
     FINANCE = "Finance",
+    SUPPORT = "Support"
 }

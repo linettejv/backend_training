@@ -55,6 +55,7 @@ class EmployeeService{
         newAddr.State = Emp.address.State;
         newAddr.Country = Emp.address.Country;
         newAddr.pincode = Emp.address.pincode;
+        newEmp.status = Emp.status;
         newEmp.address = newAddr;
         
         newEmp.password = await bcrpyt.hash(Emp.password,10);
@@ -94,7 +95,7 @@ class EmployeeService{
         else{
         newEmp.name= emp.name;
         newEmp.email = emp.email;
-        
+        newEmp.status = emp.status;
         newEmp.address.line1 = emp.address.line1;
         newEmp.joining_date = emp.joining_date;
         newEmp.experience  = emp.experience;
@@ -179,7 +180,7 @@ class EmployeeService{
         const employee = await this.employeeRepository.findByEmail(email);
         if (!employee){
             logger.error("Login failed -- service")
-            throw new HttpException(404 , "Incorrect Username Or Password");
+            throw new HttpException(401 , "Incorrect Username Or Password");
         }
         
         const res = await bcrpyt.compare(password , employee.password);

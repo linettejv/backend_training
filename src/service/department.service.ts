@@ -12,7 +12,6 @@ class DepartmentService{
         const newDept = new Department();
         newDept.name = Dept.name;
         
-        //console.log("+++++++++++++++", newDept)
         return this.departmentRepository.postDepartment(newDept);
     }
 
@@ -27,7 +26,6 @@ class DepartmentService{
         console.log("findone function");
         if (!dep){
             throw new HttpException(500,`No Department found with id : ${id}`)
-            //return null;
         }
         return dep;
     }
@@ -49,11 +47,10 @@ class DepartmentService{
         const emp =  await this.departmentRepository.findOneBy(id);
         if (!emp){
             throw new HttpException(500,`No such department with id : ${id}`)
-            //return null;
+          
         }
         else
         this.departmentRepository.deleteDepartmentById(id);
-        //return true;
     }
 }
 

@@ -8,13 +8,13 @@ import Address from "../entity/address.entity";
 
 const AppDataSource = new DataSource({
     type: "postgres",
-    host: process.env.POSTGRES_HOST,
-    port: Number(process.env.PORT),
-    username: process.env.POSTGRES_USERNAME,
-    password: process.env.POSTGRES_PASSWORD,
-    database: process.env.DATABASE,
+    host: 'localhost',
+    port: 8765,
+    username: 'postgres',
+    password: 'postgres',
+    database: 'training',
     entities: ["dist/entity/*.js"],
-    //synchronize: true,
+    synchronize: false,
     logging: true,
     namingStrategy : new SnakeNamingStrategy(),
     migrations : ["dist/db/migrations/*.js"]

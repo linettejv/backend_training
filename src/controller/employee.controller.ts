@@ -74,6 +74,7 @@ class EmployeeController{
             const errors = await validate(CreateEmployeeDt);
             if (errors.length > 0 ){
                 logger.info(errors);
+                
                 throw new ValidateErrors(404 , "Validation Errors", errors)
             }
             const employees =  await this.employeeService.createEmp(CreateEmployeeDt);

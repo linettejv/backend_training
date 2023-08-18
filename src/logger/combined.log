@@ -68,3 +68,743 @@
 [2023-08-07T12:21:11.067Z] undefined [32minfo[39m: Server Started Succesfully!
 [2023-08-07T12:21:18.252Z] undefined [31merror[39m: Invalid id request : doesnt exist in the database
 [2023-08-07T12:21:18.252Z] undefined [31merror[39m: get employee by id method call failed -- controller
+[2023-08-15T18:28:05.926Z] undefined [32minfo[39m: Server Started Succesfully!
+[2023-08-15T18:28:15.297Z] undefined [31merror[39m: Invalid id request : doesnt exist in the database
+[2023-08-15T18:28:15.297Z] undefined [31merror[39m: get employee by id method call failed -- controller
+[2023-08-15T18:29:25.628Z] undefined [31merror[39m: login failed! -- controller
+[2023-08-15T18:29:56.974Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T09:37:44.919Z] undefined [32minfo[39m: Server Started Succesfully!
+[2023-08-16T11:33:05.621Z] undefined [32minfo[39m: Server Started Succesfully!
+[2023-08-16T11:37:18.373Z] undefined [32minfo[39m: Server Started Succesfully!
+[2023-08-16T11:38:12.723Z] undefined [32minfo[39m: Server Started Succesfully!
+[2023-08-16T11:38:35.018Z] undefined [32minfo[39m: Server Started Succesfully!
+[2023-08-16T11:42:36.483Z] undefined [32minfo[39m: Server Started Succesfully!
+[2023-08-16T11:43:20.873Z] undefined [32minfo[39m: Server Started Succesfully!
+[2023-08-16T11:45:05.467Z] undefined [32minfo[39m: Server Started Succesfully!
+[2023-08-16T11:46:46.979Z] undefined [31merror[39m: login failed! -- controller
+[2023-08-16T11:46:47.872Z] undefined [31merror[39m: login failed! -- controller
+[2023-08-16T11:46:51.381Z] undefined [31merror[39m: login failed! -- controller
+[2023-08-16T11:46:51.787Z] undefined [31merror[39m: login failed! -- controller
+[2023-08-16T11:46:51.987Z] undefined [31merror[39m: login failed! -- controller
+[2023-08-16T11:46:52.073Z] undefined [31merror[39m: login failed! -- controller
+[2023-08-16T12:06:46.621Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T12:06:55.676Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T12:08:43.751Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T12:09:19.481Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T12:09:28.125Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T12:10:42.155Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T12:10:42.683Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T12:10:44.611Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T12:10:59.007Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T12:10:59.026Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T12:12:22.503Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T12:12:22.624Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T12:12:33.544Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T12:12:33.642Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T12:12:39.253Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T12:12:39.348Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T12:12:52.044Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T12:12:52.071Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T12:15:14.004Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T12:15:14.059Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T12:15:32.602Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T12:15:33.600Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T12:15:35.258Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T12:28:39.782Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T12:28:39.948Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T12:28:44.246Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T12:29:01.438Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T12:49:57.261Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T12:49:57.887Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T12:49:58.082Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T12:49:58.260Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T12:49:58.408Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T12:49:58.520Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T12:49:58.728Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T12:49:58.802Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T12:49:58.921Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T12:49:59.044Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T12:49:59.174Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T12:49:59.293Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T12:49:59.415Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T12:49:59.579Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T12:49:59.689Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T12:49:59.800Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T12:49:59.863Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T12:50:00.120Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T12:50:29.923Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T12:55:14.780Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T12:56:39.995Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T12:57:43.324Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T12:58:54.074Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T12:58:55.061Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T12:58:58.394Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T13:01:07.542Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T13:01:08.444Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T13:01:10.191Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T13:03:35.822Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T19:09:08.466Z] undefined [32minfo[39m: Server Started Succesfully!
+[2023-08-16T19:09:46.445Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T19:11:31.210Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T19:14:23.871Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T19:19:38.344Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T19:20:04.030Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T19:20:36.278Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T19:20:38.853Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T19:31:47.158Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T19:32:44.172Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T19:32:56.796Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T19:36:19.656Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T19:41:31.694Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T19:43:22.349Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T19:46:54.908Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T19:48:41.180Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T19:48:42.383Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T19:48:47.702Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T19:50:17.479Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T19:50:27.108Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T19:50:36.632Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T19:50:37.601Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T19:50:48.239Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T19:50:54.515Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T19:51:01.028Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T19:51:11.908Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T19:51:16.452Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T19:51:34.356Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T19:53:11.884Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T19:53:34.512Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T19:53:37.556Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T19:53:40.842Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T19:53:42.928Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T19:53:49.290Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T19:53:54.046Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T19:53:56.512Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T19:54:02.775Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T19:54:04.295Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T19:54:08.052Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T19:54:11.648Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T19:54:14.159Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T19:54:15.241Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T19:54:18.643Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T19:54:24.188Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T19:54:36.273Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T19:54:38.687Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T19:55:01.702Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T19:55:02.983Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T19:55:05.240Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T19:55:06.835Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T19:55:09.070Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T19:55:10.305Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T19:55:12.613Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T19:55:13.848Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T19:55:29.612Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T20:04:19.705Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T20:06:26.572Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T20:06:51.374Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T20:06:52.536Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T20:06:56.526Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T20:06:58.539Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T20:30:05.096Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T20:30:06.904Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T20:48:57.026Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T20:48:59.010Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T20:49:32.416Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T20:49:33.946Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T20:51:11.035Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T20:51:13.323Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T20:51:47.023Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T20:51:51.328Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T20:56:26.229Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T20:56:42.837Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T20:57:10.161Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T20:57:10.207Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T20:57:22.650Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T20:57:24.424Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T20:58:03.111Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T20:58:03.489Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T20:58:45.624Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T20:58:47.216Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T20:59:01.751Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T20:59:03.318Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T21:01:17.335Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T21:01:17.396Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T21:01:17.501Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T21:01:22.536Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T21:05:13.609Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T21:05:14.971Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T21:06:12.007Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T21:06:13.523Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T21:08:49.180Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T21:09:03.528Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T21:09:37.359Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T21:15:24.388Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T21:18:27.665Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T21:20:56.684Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T21:20:58.069Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T21:26:06.654Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T21:26:08.585Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T21:26:35.157Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T21:27:20.061Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T21:34:39.125Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T21:34:43.345Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T21:40:21.209Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T21:40:24.990Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T21:45:34.661Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T21:45:40.080Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T21:47:13.180Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T21:47:15.504Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T21:47:47.757Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T21:54:21.000Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T21:56:35.910Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T21:56:37.460Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T21:58:06.270Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T21:59:15.639Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T21:59:17.922Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T21:59:42.057Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T21:59:47.031Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T21:59:56.561Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-16T22:03:25.228Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T04:33:33.477Z] undefined [32minfo[39m: Server Started Succesfully!
+[2023-08-17T04:33:36.306Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T04:33:43.750Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T04:39:57.491Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T04:39:59.503Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T04:42:46.630Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T04:45:46.246Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T04:46:22.365Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T04:47:21.282Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T04:47:25.258Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T04:48:51.437Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T04:54:41.489Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T04:54:41.511Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T04:54:47.548Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T04:59:27.988Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T04:59:27.992Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T04:59:29.293Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T04:59:29.308Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T04:59:30.831Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T04:59:30.841Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T04:59:47.184Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T04:59:47.187Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T04:59:49.664Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T04:59:49.671Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T04:59:54.821Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T04:59:54.830Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T05:00:16.221Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T05:00:16.227Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T05:00:16.279Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T05:00:16.286Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T05:01:55.261Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T05:02:12.991Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T05:02:20.743Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T05:03:22.366Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T05:04:00.583Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T05:04:24.697Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T05:08:26.417Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T05:10:24.818Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T05:12:32.298Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T05:13:03.435Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T05:13:53.692Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T05:19:43.520Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T05:22:05.202Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T05:23:13.911Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T05:23:14.003Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T05:23:17.705Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T05:23:19.463Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T05:27:39.451Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T05:27:41.799Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T05:27:46.201Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T05:27:47.219Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T05:27:53.370Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T05:52:37.486Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T05:52:43.812Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T05:52:44.778Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T05:54:24.053Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T06:08:15.261Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T06:08:24.709Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T06:08:26.236Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T06:08:28.176Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T06:26:43.904Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T06:26:45.665Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T06:27:00.032Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T06:27:32.058Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T06:27:34.590Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T06:29:41.333Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T06:29:51.511Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T06:29:55.730Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T06:30:36.413Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T06:30:39.559Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T06:30:44.193Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T06:30:45.815Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T06:31:03.704Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T06:31:06.528Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T06:31:11.520Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T06:31:16.990Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T06:31:18.061Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T06:31:20.799Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T06:31:22.553Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T06:31:23.595Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T06:31:24.965Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T06:31:26.217Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T06:31:31.576Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T06:31:33.449Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T06:31:34.982Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T06:31:40.278Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T06:34:35.146Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T06:34:37.372Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T06:34:39.003Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T06:36:38.277Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T06:36:40.627Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T06:36:41.602Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T06:36:43.837Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T06:36:44.456Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T06:36:46.156Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T06:36:50.223Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T06:36:51.991Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T06:36:58.610Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T06:37:03.117Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T06:37:04.308Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T06:39:10.587Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T06:42:25.836Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T06:42:27.849Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T06:42:30.647Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T06:42:33.616Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T06:42:34.557Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T06:42:36.009Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T06:44:02.702Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T06:44:04.563Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T06:44:06.334Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T06:44:08.387Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T06:44:10.920Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T06:44:12.800Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T06:44:14.752Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T06:44:36.903Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T06:44:39.385Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T06:44:40.545Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T06:44:41.835Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T06:46:23.907Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T06:46:41.552Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T06:47:55.296Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T06:47:56.828Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T06:47:59.490Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T06:48:02.913Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T06:48:05.242Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T06:48:06.354Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T06:56:56.341Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T06:57:01.833Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T06:57:43.260Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T06:58:54.980Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T06:59:08.578Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T06:59:12.446Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T06:59:13.597Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T06:59:16.949Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T07:10:52.527Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T07:11:54.878Z] undefined [32minfo[39m: An instance of CreateEmployeeDto has failed the validation:
+ - property role has failed the following constraints: isEnum 
+,An instance of CreateEmployeeDto has failed the validation:
+ - property department_id has failed the following constraints: isNotEmpty 
+
+[2023-08-17T07:11:54.878Z] undefined [31merror[39m: Post employee api called failed -- controller 
+[2023-08-17T07:11:54.887Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T07:15:28.483Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T07:15:47.326Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T07:16:31.682Z] undefined [32minfo[39m: An instance of CreateEmployeeDto has failed the validation:
+ - property email has failed the following constraints: isEmail 
+,An instance of CreateEmployeeDto has failed the validation:
+ - property department_id has failed the following constraints: isNotEmpty 
+
+[2023-08-17T07:16:31.682Z] undefined [31merror[39m: Post employee api called failed -- controller 
+[2023-08-17T07:16:31.690Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T07:48:34.096Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T07:50:13.007Z] undefined [32minfo[39m: An instance of CreateEmployeeDto has failed the validation:
+ - property role has failed the following constraints: isEnum 
+
+[2023-08-17T07:50:13.007Z] undefined [31merror[39m: Post employee api called failed -- controller 
+[2023-08-17T07:50:13.016Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T07:51:53.045Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T07:52:03.332Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T07:52:05.586Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T07:52:09.150Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T07:52:11.556Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T07:53:06.915Z] undefined [32minfo[39m: An instance of CreateEmployeeDto has failed the validation:
+ - property role has failed the following constraints: isEnum 
+
+[2023-08-17T07:53:06.915Z] undefined [31merror[39m: Post employee api called failed -- controller 
+[2023-08-17T07:53:06.927Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T07:54:08.552Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T07:54:50.535Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T07:55:06.237Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T07:57:48.409Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T07:57:49.459Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T07:57:54.584Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T07:57:58.674Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T07:58:18.854Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T07:58:20.687Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T07:58:27.709Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T07:58:44.030Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T07:59:19.464Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T08:04:06.354Z] undefined [32minfo[39m: An instance of CreateEmployeeDto has failed the validation:
+ - property role has failed the following constraints: isEnum, isNotEmpty 
+
+[2023-08-17T08:04:06.354Z] undefined [31merror[39m: Post employee api called failed -- controller 
+[2023-08-17T08:04:06.357Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T08:04:29.546Z] undefined [32minfo[39m: Server Started Succesfully!
+[2023-08-17T08:04:36.303Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T08:08:23.752Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T08:09:19.704Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T08:09:19.781Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T08:12:03.752Z] undefined [32minfo[39m: An instance of CreateEmployeeDto has failed the validation:
+ - property role has failed the following constraints: isEnum, isNotEmpty 
+
+[2023-08-17T08:12:03.753Z] undefined [31merror[39m: Post employee api called failed -- controller 
+[2023-08-17T08:12:03.759Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T08:12:12.092Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T08:13:40.006Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T08:13:40.075Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T08:24:23.926Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T08:24:34.705Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T08:24:36.403Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T08:24:37.834Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T08:25:04.799Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T08:25:06.203Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T08:25:08.207Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T08:26:13.652Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T08:26:26.070Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T08:27:06.686Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T08:27:31.802Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T08:27:57.063Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T08:28:00.296Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T08:28:23.697Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T08:28:25.581Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T08:28:27.631Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T08:29:24.449Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T08:29:26.731Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T08:30:55.047Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T08:30:55.119Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T08:32:12.038Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T08:32:17.504Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T08:32:21.815Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T08:35:51.857Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T08:35:53.747Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T08:35:56.371Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T08:35:57.917Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T08:36:02.534Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T08:36:03.857Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T08:36:09.151Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T08:37:26.334Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T08:37:35.057Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T08:37:37.682Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T08:37:41.539Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T08:37:43.696Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T08:37:45.736Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T08:37:47.630Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T08:37:49.539Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T08:38:21.597Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T08:40:01.618Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T08:40:04.106Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T08:40:06.149Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T08:40:08.614Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T08:40:11.110Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T08:40:13.165Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T08:40:16.535Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T08:40:17.817Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T08:40:18.921Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T08:40:21.093Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T08:40:21.846Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T08:40:24.022Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T08:42:58.502Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T08:43:00.515Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T08:43:05.684Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T08:44:18.530Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T08:44:22.919Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T08:44:24.049Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T08:44:25.506Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T08:45:24.256Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T08:55:26.369Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T08:55:27.089Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T08:55:43.332Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T08:56:16.754Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T08:56:23.299Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T08:58:37.300Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T09:01:56.675Z] undefined [32minfo[39m: An instance of CreateEmployeeDto has failed the validation:
+ - property address.State has failed the following constraints: isString 
+ - property address.pincode has failed the following constraints: isString 
+
+[2023-08-17T09:01:56.675Z] undefined [31merror[39m: Post employee api called failed -- controller 
+[2023-08-17T09:01:56.693Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T09:04:31.520Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T09:04:35.306Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T09:04:36.693Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T09:04:37.842Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T09:04:39.700Z] undefined [31merror[39m: An instance of UpdateEmployeeDto has failed the validation:
+ - property address.pincode has failed the following constraints: isString, isNotEmpty 
+
+[2023-08-17T09:04:39.700Z] undefined [31merror[39m: Replace employee by id methodm failed -- controller
+[2023-08-17T09:04:39.719Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T09:06:25.952Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T09:06:30.437Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T09:06:31.473Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T09:07:11.750Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T09:10:06.713Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T09:10:09.831Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T09:10:11.652Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T09:10:13.226Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T09:10:15.311Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T09:10:20.463Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T09:10:21.910Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T09:10:27.536Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T09:10:37.257Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T09:11:55.312Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T09:11:56.498Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T09:12:08.231Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T09:17:46.920Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T09:17:48.394Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T09:17:54.026Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T09:24:28.232Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T09:24:29.617Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T09:24:41.938Z] undefined [31merror[39m: An instance of UpdateEmployeeDto has failed the validation:
+ - property address.line1 has failed the following constraints: isString, isNotEmpty 
+
+[2023-08-17T09:24:41.939Z] undefined [31merror[39m: Replace employee by id methodm failed -- controller
+[2023-08-17T09:24:41.966Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T09:25:44.070Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T09:25:45.510Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T09:27:52.035Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T09:27:58.497Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T09:28:02.019Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T09:28:03.672Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T09:28:09.401Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T09:28:18.212Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T09:28:19.739Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T09:28:31.102Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T09:30:51.163Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T09:30:52.674Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T09:31:02.901Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T09:32:27.807Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T09:32:29.831Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T09:32:31.556Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T09:32:33.213Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T09:32:34.412Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T09:32:38.674Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T09:32:58.821Z] undefined [32minfo[39m: Server Started Succesfully!
+[2023-08-17T09:33:01.688Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T09:33:02.866Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T09:33:07.070Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T09:33:20.182Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T09:34:04.964Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T09:34:09.909Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T09:34:20.576Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T09:34:23.456Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T09:34:27.093Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T09:34:32.757Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T09:34:34.307Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T09:34:40.583Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T09:34:54.308Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T09:34:57.091Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T09:35:00.027Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T09:35:06.320Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T09:37:10.185Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T09:37:12.648Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T09:37:15.753Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T09:37:50.039Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T09:37:51.203Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T09:37:54.319Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T09:37:56.385Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T09:37:58.196Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T09:38:01.308Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T09:38:01.329Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T09:38:42.088Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T09:41:10.496Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T09:41:10.543Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T09:41:10.590Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T09:43:24.457Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T09:48:59.848Z] undefined [31merror[39m: An instance of UpdateEmployeeDto has failed the validation:
+ - property name has failed the following constraints: isString, isNotEmpty 
+,An instance of UpdateEmployeeDto has failed the validation:
+ - property email has failed the following constraints: isEmail, isNotEmpty 
+,An instance of UpdateEmployeeDto has failed the validation:
+ - property address has failed the following constraints: isNotEmpty 
+
+[2023-08-17T09:48:59.848Z] undefined [31merror[39m: Replace employee by id methodm failed -- controller
+[2023-08-17T09:48:59.868Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T09:49:10.624Z] undefined [31merror[39m: An instance of UpdateEmployeeDto has failed the validation:
+ - property name has failed the following constraints: isString, isNotEmpty 
+,An instance of UpdateEmployeeDto has failed the validation:
+ - property email has failed the following constraints: isEmail, isNotEmpty 
+,An instance of UpdateEmployeeDto has failed the validation:
+ - property address has failed the following constraints: isNotEmpty 
+
+[2023-08-17T09:49:10.625Z] undefined [31merror[39m: Replace employee by id methodm failed -- controller
+[2023-08-17T09:49:10.648Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T09:49:27.054Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T09:49:33.205Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T09:49:33.223Z] undefined [32minfo[39m: removed employee with id 37
+[2023-08-17T09:49:33.232Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T09:56:29.106Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T09:56:29.123Z] undefined [32minfo[39m: removed employee with id 39
+[2023-08-17T09:56:29.135Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T09:56:32.691Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T09:59:00.602Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T09:59:02.630Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T09:59:04.637Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T09:59:06.929Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T09:59:08.529Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T09:59:11.461Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T09:59:21.596Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T09:59:23.664Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T09:59:27.767Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T10:00:11.018Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T10:00:12.410Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T10:00:17.715Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T10:00:44.580Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T10:01:02.401Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T10:01:17.342Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T10:01:47.903Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T10:02:22.454Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T10:02:42.791Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T10:02:45.530Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T10:02:47.200Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T10:03:16.989Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T10:03:23.739Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T10:03:32.427Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T10:03:45.668Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T10:04:24.413Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T10:05:40.259Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T10:08:13.093Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T10:08:18.821Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T10:08:19.652Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T10:08:30.678Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T10:14:29.674Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T10:14:29.770Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T10:14:29.815Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T10:17:17.699Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T10:17:17.757Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T10:17:17.956Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T10:17:18.184Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T10:17:18.302Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T10:19:04.620Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T10:19:16.518Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T10:19:21.400Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T10:21:36.482Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T10:21:36.583Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T10:22:13.550Z] undefined [31merror[39m: login failed! -- controller
+[2023-08-17T10:22:55.842Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T10:23:11.751Z] undefined [31merror[39m: login failed! -- controller
+[2023-08-17T10:48:05.100Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T10:48:29.551Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T10:48:29.570Z] undefined [32minfo[39m: removed employee with id 41
+[2023-08-17T10:48:29.579Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T10:49:26.402Z] undefined [31merror[39m: login failed! -- controller
+[2023-08-17T10:49:38.375Z] undefined [31merror[39m: login failed! -- controller
+[2023-08-17T10:50:15.715Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T10:51:24.407Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T10:51:24.491Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T10:51:32.581Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T10:51:46.708Z] undefined [31merror[39m: login failed! -- controller
+[2023-08-17T10:52:55.947Z] undefined [31merror[39m: login failed! -- controller
+[2023-08-17T10:53:06.584Z] undefined [31merror[39m: login failed! -- controller
+[2023-08-17T10:55:16.449Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T10:55:54.098Z] undefined [31merror[39m: login failed! -- controller
+[2023-08-17T10:56:58.370Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T10:57:48.735Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T10:59:32.919Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T10:59:42.239Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T11:03:17.604Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T11:03:31.006Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T11:14:05.782Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T11:14:07.909Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T11:14:12.555Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T11:21:24.588Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T11:21:24.626Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T11:21:24.666Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T11:21:30.410Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T11:21:35.419Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T11:21:36.966Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T11:21:40.384Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T11:25:29.180Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T11:26:21.974Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T11:26:24.042Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T11:26:25.519Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T11:30:02.125Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T11:30:08.405Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T11:30:42.328Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T11:30:44.642Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T11:30:48.779Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T11:35:00.706Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T11:35:06.578Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T11:45:42.698Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T11:47:01.988Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T11:50:47.454Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T11:50:49.999Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T11:53:35.423Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T11:59:46.414Z] undefined [31merror[39m: login failed! -- controller
+[2023-08-17T12:01:12.886Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T12:04:38.254Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T12:04:38.308Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T12:04:38.364Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T12:04:38.490Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T12:04:38.547Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T12:04:38.618Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T12:04:38.675Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T12:04:38.965Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T12:04:39.009Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T12:04:39.077Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T12:04:56.996Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T12:05:21.762Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T12:05:23.602Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T12:10:33.716Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T12:10:41.776Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T12:10:43.099Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T12:10:43.348Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T12:11:38.204Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T12:11:51.616Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T12:11:55.065Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T12:11:55.429Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T12:15:50.152Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T12:24:40.595Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T12:24:40.932Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T12:25:29.362Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T12:25:33.903Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T12:28:16.400Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T12:30:49.320Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T12:33:59.817Z] undefined [32minfo[39m: An instance of CreateEmployeeDto has failed the validation:
+ - property role has failed the following constraints: isEnum 
+
+[2023-08-17T12:33:59.817Z] undefined [31merror[39m: Post employee api called failed -- controller 
+[2023-08-17T12:33:59.821Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T12:37:13.173Z] undefined [32minfo[39m: An instance of CreateEmployeeDto has failed the validation:
+ - property role has failed the following constraints: isEnum 
+
+[2023-08-17T12:37:13.173Z] undefined [31merror[39m: Post employee api called failed -- controller 
+[2023-08-17T12:37:13.183Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T12:38:53.006Z] undefined [32minfo[39m: Server Started Succesfully!
+[2023-08-17T12:40:22.000Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T12:40:22.117Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T12:46:07.174Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T12:46:08.451Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T12:46:18.451Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T12:49:11.843Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T12:49:14.815Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T12:49:23.570Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T12:49:27.128Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T12:49:31.446Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T12:49:32.401Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T12:49:34.912Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T12:51:16.184Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T12:51:17.944Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T12:51:19.935Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T12:51:23.967Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T12:51:26.471Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T12:54:40.287Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T12:54:44.181Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T12:54:46.893Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T12:54:53.749Z] undefined [32minfo[39m: Initiated a get all employees call
+[2023-08-17T12:54:55.671Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T12:54:58.009Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T12:55:21.710Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T12:56:56.932Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T12:57:09.061Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T12:57:13.321Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T12:57:16.472Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T12:57:45.196Z] undefined [32minfo[39m: Find one function called - service getEmpByid
+[2023-08-17T12:58:09.675Z] undefined [32minfo[39m: Find one function called - service getEmpByid

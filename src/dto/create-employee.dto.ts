@@ -35,6 +35,8 @@ class CreateEmployeeDto{
 
     @IsNotEmpty()
     department_id: number;
+
+    status : string;
 }
 
 export default CreateEmployeeDto;

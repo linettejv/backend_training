@@ -31,10 +31,16 @@ class Employee extends AbstratctEntity{
     department : Department ;
 
     @Column()
+    department_id : number;
+
+    @Column()
     password : string
 
     @Column({default : Role.DEVELOPER})
     role : Role
+
+    @Column()
+    status : string ;
 }
 
 export  {Employee};

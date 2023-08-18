@@ -24,6 +24,8 @@ class UpdateEmployeeDto{
     joining_date : string;
 
     experience : number;
+
+    status : string;
 }
 
 export default UpdateEmployeeDto;
